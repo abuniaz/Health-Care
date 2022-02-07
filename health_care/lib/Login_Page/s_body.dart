@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:health_care/Login_Page/after_login.dart';
 import 'package:health_care/Login_Page/check_box.dart';
+import 'package:health_care/botton.dart';
 
 class Body1 extends StatelessWidget {
   const Body1({Key? key}) : super(key: key);
@@ -23,7 +25,8 @@ class Body1 extends StatelessWidget {
             style: TextStyle(fontSize: 15),
           ),
           Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding:
+                const EdgeInsets.only(top: 30, right: 14, left: 14, bottom: 12),
             child: Column(
               children: [
                 TextFormField(
@@ -43,6 +46,11 @@ class Body1 extends StatelessWidget {
                   ),
                 ),
                 const CheckBox(),
+                const SizedBox(
+                  height: 40,
+                ),
+                BottonWidget(text: "Log in", press: () {}),
+                const DontAccount()
               ],
             ),
           )
