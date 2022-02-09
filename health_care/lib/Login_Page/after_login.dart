@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_care/Sign_Up/home.dart';
 
 class DontAccount extends StatelessWidget {
   const DontAccount({Key? key}) : super(key: key);
@@ -16,7 +17,14 @@ class DontAccount extends StatelessWidget {
               "don't have any account? Please",
               style: TextStyle(fontSize: 15),
             ),
-            TextButton(onPressed: () {}, child: const Text("Sign Up"))
+            TextButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MainSignUp()));
+                },
+                child: const Text("Sign Up"))
           ],
         ),
       ),
