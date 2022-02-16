@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:health_care/Login_Page/after_login.dart';
 import 'package:health_care/Login_Page/check_box.dart';
+import 'package:health_care/Start_Page/home2.dart';
 import 'package:health_care/botton.dart';
 
 class Body1 extends StatelessWidget {
@@ -49,7 +50,14 @@ class Body1 extends StatelessWidget {
                 const SizedBox(
                   height: 40,
                 ),
-                BottonWidget(text: "Log in", press: () {}),
+                BottonWidget(
+                    text: "Log in",
+                    press: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HomeTwo()));
+                    }),
                 const DontAccount()
               ],
             ),

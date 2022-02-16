@@ -27,12 +27,12 @@ class _CheckBoxState extends State<CheckBox> {
         const Text("Remember me",
             style: TextStyle(color: Colors.black, fontSize: 15)),
         const SizedBox(
-          width: 63,
+          width: 44,
         ),
         TextButton(
             onPressed: () {},
             child: const Text(
-              "Forgot password",
+              "Forgotten password",
               style: TextStyle(decoration: TextDecoration.underline),
             ))
       ],
