@@ -24,7 +24,7 @@ class Homepage extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const FirstPage()));
               },
               text: "Continue",
-            )
+            ),
           ],
         ),
       ),

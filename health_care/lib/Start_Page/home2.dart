@@ -34,7 +34,7 @@ class HomeTwo extends StatelessWidget {
               decoration: InputDecoration(
                   suffixIcon: Icon(Icons.search),
                   hintText: "Search here what you need?"),
-            )
+            ),
           ],
         ),
       ),
