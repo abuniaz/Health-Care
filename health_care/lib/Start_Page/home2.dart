@@ -31,7 +31,7 @@ class HomeTwo extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   suffixIcon: Icon(Icons.search),
                   hintText: "Search here what you need?"),
             ),
