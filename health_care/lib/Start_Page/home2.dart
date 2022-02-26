@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_care/constant.dart';
 
 class HomeTwo extends StatelessWidget {
   const HomeTwo({Key? key}) : super(key: key);
@@ -30,11 +31,32 @@ class HomeTwo extends StatelessWidget {
                   color: Colors.black,
                   fontWeight: FontWeight.bold),
             ),
-            TextFormField(
-              decoration: const InputDecoration(
-                  suffixIcon: Icon(Icons.search),
-                  hintText: "Search here what you need?"),
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: TextFormField(
+                decoration: const InputDecoration(
+                    suffixIcon: Icon(Icons.search),
+                    hintText: "Search here what you need?"),
+              ),
             ),
+            Text("your servieses"),
+            Container(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        height: 180,
+                        width: 150,
+                        decoration: BoxDecoration(
+                            color: kPrimaryLightColor,
+                            borderRadius: BorderRadius.circular(30)),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
