@@ -51,7 +51,10 @@ class HomeTwo extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: kPrimaryLightColor,
                             borderRadius: BorderRadius.circular(30)),
-                        child: const Text("Doctors Time"),
+                        child: const Text(
+                          "Doctors Time",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
                       )
                     ],
                   ),
