@@ -39,7 +39,7 @@ class HomeTwo extends StatelessWidget {
                     hintText: "Search here what you need?"),
               ),
             ),
-            Text("your servieses"),
+            const Text("your servieses"),
             Container(
               child: Column(
                 children: [
