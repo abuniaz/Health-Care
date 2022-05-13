@@ -9,7 +9,10 @@ class HomeTwo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.person_add))
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.person_add),
+          )
         ],
       ),
       body: Container(
@@ -53,8 +56,9 @@ class HomeTwo extends StatelessWidget {
                         height: 180,
                         width: 150,
                         decoration: BoxDecoration(
-                            color: kPrimaryLightColor,
-                            borderRadius: BorderRadius.circular(30)),
+                          color: kPrimaryLightColor,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
                         child: const Text(
                           "Doctors Time",
                           style: TextStyle(fontWeight: FontWeight.bold),

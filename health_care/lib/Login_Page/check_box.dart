@@ -24,17 +24,20 @@ class _CheckBoxState extends State<CheckBox> {
           },
           activeColor: Colors.blue,
         ),
-        const Text("Remember me",
-            style: TextStyle(color: Colors.black, fontSize: 15)),
+        const Text(
+          "Remember me",
+          style: TextStyle(color: Colors.black, fontSize: 15),
+        ),
         const SizedBox(
           width: 44,
         ),
         TextButton(
-            onPressed: () {},
-            child: const Text(
-              "Forgotten password",
-              style: TextStyle(decoration: TextDecoration.underline),
-            ))
+          onPressed: () {},
+          child: const Text(
+            "Forgotten password",
+            style: TextStyle(decoration: TextDecoration.underline),
+          ),
+        )
       ],
     );
   }
