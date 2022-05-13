@@ -8,9 +8,12 @@ class HomeTwo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.person_add))],
+        actions: [
+          IconButton(onPressed: () {}, icon: const Icon(Icons.person_add))
+        ],
       ),
       body: Container(
+        color: Colors.white,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -41,6 +44,7 @@ class HomeTwo extends StatelessWidget {
             ),
             const Text("your servieses"),
             Container(
+              color: Colors.white,
               child: Column(
                 children: [
                   Row(
