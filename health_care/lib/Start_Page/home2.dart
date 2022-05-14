@@ -8,15 +8,39 @@ class HomeTwo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: const Text(
+          'Categories',
+          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: const Icon(Icons.person_add),
+            icon: const Icon(Icons.circle),
           ),
         ],
       ),
       body: Container(
+        height: double.infinity,
+        width: double.infinity,
         color: Colors.white,
+        child: Column(
+          children: [
+            Container(
+              height: 150,
+              width: 500,
+              decoration: BoxDecoration(
+                  color: Colors.white, borderRadius: BorderRadius.circular(20)),
+              child: const Center(
+                  child: Text(
+                'Choose A Categories &\n   Find the Specialists ',
+                style: TextStyle(
+                    fontSize: 22,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold),
+              )),
+            )
+          ],
+        ),
       ),
       drawer: const Drawer(),
     );
