@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_care/Start_Page/row_with_fea_One.dart';
 import 'package:health_care/constant.dart';
 
 class HomeTwo extends StatelessWidget {
@@ -38,7 +39,8 @@ class HomeTwo extends StatelessWidget {
                     color: Colors.black,
                     fontWeight: FontWeight.bold),
               )),
-            )
+            ),
+            const RowWithFeatureOne()
           ],
         ),
       ),
