@@ -12,65 +12,11 @@ class HomeTwo extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: const Icon(Icons.person_add),
-          )
+          ),
         ],
       ),
       body: Container(
         color: Colors.white,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(
-              height: 20,
-            ),
-            const Text(
-              "Hello",
-              style: TextStyle(
-                  fontSize: 35,
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold),
-            ),
-            const Text(
-              "Abu Niaz",
-              style: TextStyle(
-                  fontSize: 35,
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: TextFormField(
-                decoration: const InputDecoration(
-                    suffixIcon: Icon(Icons.search),
-                    hintText: "Search here what you need?"),
-              ),
-            ),
-            const Text("your servieses"),
-            Container(
-              color: Colors.white,
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        height: 180,
-                        width: 150,
-                        decoration: BoxDecoration(
-                          color: kPrimaryLightColor,
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                        child: const Text(
-                          "Doctors Time",
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      )
-                    ],
-                  ),
-                ],
-              ),
-            )
-          ],
-        ),
       ),
       drawer: const Drawer(),
     );

@@ -12,7 +12,7 @@ class DontAccount extends StatelessWidget {
         child: Row(
           children: [
             const SizedBox(
-              width: 40,
+              width: 20,
             ),
             const Text(
               "don't have any account? Please",

@@ -29,7 +29,7 @@ class _CheckBoxState extends State<CheckBox> {
           style: TextStyle(color: Colors.black, fontSize: 15),
         ),
         const SizedBox(
-          width: 44,
+          width: 10,
         ),
         TextButton(
           onPressed: () {},
