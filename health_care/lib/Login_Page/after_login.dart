@@ -19,13 +19,16 @@ class DontAccount extends StatelessWidget {
               style: TextStyle(fontSize: 15),
             ),
             TextButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const MainSignUp()));
-                },
-                child: const Text("Sign Up"))
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MainSignUp(),
+                  ),
+                );
+              },
+              child: const Text("Sign Up"),
+            )
           ],
         ),
       ),
