@@ -60,9 +60,11 @@ class Body1 extends StatelessWidget {
                       text: "Log in",
                       press: () {
                         Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const HomeTwo()));
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const HomeTwo(),
+                          ),
+                        );
                       }),
                   const DontAccount()
                 ],
