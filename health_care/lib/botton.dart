@@ -13,20 +13,21 @@ class BottonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlatButton(
-        onPressed: press,
-        child: Container(
-          height: 50,
-          width: 170,
-          decoration: BoxDecoration(
-            color: kPrimaryColor,
-            borderRadius: BorderRadius.circular(30),
+      onPressed: press,
+      child: Container(
+        height: 50,
+        width: 170,
+        decoration: BoxDecoration(
+          color: kPrimaryColor,
+          borderRadius: BorderRadius.circular(30),
+        ),
+        child: Center(
+          child: Text(
+            text,
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
           ),
-          child: Center(
-            child: Text(
-              text,
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
-            ),
-          ),
-        ));
+        ),
+      ),
+    );
   }
 }
