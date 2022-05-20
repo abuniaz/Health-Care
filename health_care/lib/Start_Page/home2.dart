@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:health_care/Start_Page/row_with_fea_One.dart';
-import 'package:health_care/constant.dart';
 
 class HomeTwo extends StatelessWidget {
   const HomeTwo({Key? key}) : super(key: key);
@@ -30,15 +29,18 @@ class HomeTwo extends StatelessWidget {
               height: 150,
               width: 500,
               decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(20)),
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+              ),
               child: const Center(
-                  child: Text(
-                'Choose A Categories &\n   Find the Specialists ',
-                style: TextStyle(
-                    fontSize: 22,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
-              )),
+                child: Text(
+                  'Choose A Categories &\n   Find the Specialists ',
+                  style: TextStyle(
+                      fontSize: 22,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
             ),
             const RowWithFeatureOne()
           ],
