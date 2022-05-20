@@ -38,7 +38,9 @@ class Feature extends StatelessWidget {
           height: 70,
           width: 70,
           decoration: BoxDecoration(
-              color: Colors.red, borderRadius: BorderRadius.circular(25)),
+            color: Colors.red,
+            borderRadius: BorderRadius.circular(25),
+          ),
         ),
         Text(
           name,
