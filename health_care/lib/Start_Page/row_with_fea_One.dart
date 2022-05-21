@@ -7,21 +7,61 @@ class RowWithFeatureOne extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: const [
-        Feature(
-          name: '    Seat\n Booking',
-          img: 'images/bed.png',
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: const [
+            Feature(
+              name: '    Seat\n Booking',
+              img: 'images/bed.png',
+            ),
+            Feature(
+              name: 'Medicine',
+              img: 'images/medi2.jpg',
+            ),
+            Feature(
+              name: 'Dental',
+              img: 'images/den.jpg',
+            )
+          ],
         ),
-        Feature(
-          name: 'Medicine',
-          img: 'images/medi2.jpg',
+        const SizedBox(
+          height: 15,
         ),
-        Feature(
-          name: 'Dental',
-          img: 'images/den.jpg',
-        )
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: const [
+            Feature(
+              name: '    Seat\n Booking',
+              img: 'images/bed.png',
+            ),
+            Feature(
+              name: 'Medicine',
+              img: 'images/medi2.jpg',
+            ),
+            Feature(
+              name: 'Dental',
+              img: 'images/den.jpg',
+            )
+          ],
+        ),
+        const SizedBox(
+          height: 15,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: const [
+            Feature(
+              name: '    Seat\n Booking',
+              img: 'images/bed.png',
+            ),
+            Feature(
+              name: 'Medicine',
+              img: 'images/medi2.jpg',
+            ),
+          ],
+        ),
       ],
     );
   }
