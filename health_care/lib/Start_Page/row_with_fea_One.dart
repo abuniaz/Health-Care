@@ -11,16 +11,16 @@ class RowWithFeatureOne extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: const [
         Feature(
-          name: 'Seat Booking',
+          name: '    Seat\n Booking',
           img: 'images/bed.png',
         ),
         Feature(
           name: 'Medicine',
-          img: '',
+          img: 'images/medi2.jpg',
         ),
         Feature(
-          name: '',
-          img: '',
+          name: 'Dental',
+          img: 'images/den.jpg',
         )
       ],
     );
@@ -40,15 +40,20 @@ class Feature extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: 70,
-          width: 70,
+          height: 80,
+          width: 80,
           decoration: BoxDecoration(
             color: Colors.red,
             borderRadius: BorderRadius.circular(25),
+            image: DecorationImage(
+                image: AssetImage(
+                  img,
+                ),
+                fit: BoxFit.cover),
           ),
-          child: Image(
-            image: AssetImage(img),
-          ),
+        ),
+        const SizedBox(
+          height: 4,
         ),
         Text(
           name,

@@ -18,18 +18,19 @@ class HomeTwo extends StatelessWidget {
             icon: const Icon(Icons.circle),
           ),
         ],
+        backgroundColor: Colors.grey,
       ),
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        color: Colors.white,
+        color: Colors.grey,
         child: Column(
           children: [
             Container(
               height: 150,
               width: 500,
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Colors.grey,
                 borderRadius: BorderRadius.circular(20),
               ),
               child: const Center(
