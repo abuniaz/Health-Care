@@ -11,13 +11,16 @@ class RowWithFeatureOne extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: const [
         Feature(
-          name: '',
+          name: 'Seat Booking',
+          img: 'images/bed.png',
+        ),
+        Feature(
+          name: 'Medicine',
+          img: '',
         ),
         Feature(
           name: '',
-        ),
-        Feature(
-          name: '',
+          img: '',
         )
       ],
     );
@@ -28,8 +31,10 @@ class Feature extends StatelessWidget {
   const Feature({
     Key? key,
     required this.name,
+    required this.img,
   }) : super(key: key);
   final String name;
+  final String img;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -40,6 +45,9 @@ class Feature extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.red,
             borderRadius: BorderRadius.circular(25),
+          ),
+          child: Image(
+            image: AssetImage(img),
           ),
         ),
         Text(
