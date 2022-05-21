@@ -66,6 +66,14 @@ flutter:
   - images/D4.jpg
   - images/D5.jpg
   - images/D7.png
+  - images/am.png
+  - images/b.png
+  - images/bed.png
+  - images/den.jpg
+  - images/dt.png
+  - images/medi2.jpg
+  - images/op.png
+  - images/ph.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
