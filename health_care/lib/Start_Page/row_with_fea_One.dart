@@ -7,70 +7,73 @@ class RowWithFeatureOne extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Feature(
-              name: 'Seat Booking',
-              img: 'images/bed.png',
-              press: () {},
-            ),
-            Feature(
-              name: 'Medicine',
-              img: 'images/medi2.jpg',
-              press: () {},
-            ),
-            Feature(
-              name: 'Dental',
-              img: 'images/den.jpg',
-              press: () {},
-            )
-          ],
-        ),
-        const SizedBox(
-          height: 15,
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Feature(
-              name: 'Optometry',
-              img: 'images/op4.jpg',
-              press: () {},
-            ),
-            Feature(
-              name: 'Ambulance',
-              img: 'images/am.png',
-              press: () {},
-            ),
-            Feature(
-              name: 'Doctors Time',
-              img: 'images/dt.png',
-              press: () {},
-            )
-          ],
-        ),
-        const SizedBox(
-          height: 15,
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Feature(
-              name: 'Blood Donate',
-              img: 'images/b.png',
-              press: () {},
-            ),
-            Feature(
-              name: 'Physiotheraphy',
-              img: 'images/ph.png',
-              press: () {},
-            ),
-          ],
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(left: 10),
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Feature(
+                name: 'Seat Booking',
+                img: 'images/bed.png',
+                press: () {},
+              ),
+              Feature(
+                name: 'Medicine',
+                img: 'images/medi2.jpg',
+                press: () {},
+              ),
+              Feature(
+                name: 'Dental',
+                img: 'images/den.jpg',
+                press: () {},
+              )
+            ],
+          ),
+          const SizedBox(
+            height: 25,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Feature(
+                name: 'Optometry',
+                img: 'images/op4.jpg',
+                press: () {},
+              ),
+              Feature(
+                name: 'Ambulance',
+                img: 'images/am.png',
+                press: () {},
+              ),
+              Feature(
+                name: 'Doctors Time',
+                img: 'images/dt.png',
+                press: () {},
+              )
+            ],
+          ),
+          const SizedBox(
+            height: 25,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Feature(
+                name: 'Blood Donate',
+                img: 'images/b.png',
+                press: () {},
+              ),
+              Feature(
+                name: 'Physiotheraphy',
+                img: 'images/ph.png',
+                press: () {},
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
