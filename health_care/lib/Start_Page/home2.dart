@@ -47,7 +47,20 @@ class HomeTwo extends StatelessWidget {
           ],
         ),
       ),
-      drawer: const Drawer(),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(
+                decoration: const BoxDecoration(color: Colors.blue),
+                child: Column()),
+            const ListTile(
+              title: Text('Profile'),
+            ),
+            const ListTile(),
+            const ListTile()
+          ],
+        ),
+      ),
     );
   }
 }
