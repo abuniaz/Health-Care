@@ -13,7 +13,7 @@ class RowWithFeatureOne extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Feature(
-              name: '    Seat\n Booking',
+              name: 'Seat Booking',
               img: 'images/bed.png',
               press: () {},
             ),
@@ -36,18 +36,18 @@ class RowWithFeatureOne extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Feature(
-              name: '    Seat\n Booking',
-              img: 'images/bed.png',
+              name: 'Optometry',
+              img: 'images/op4.jpg',
               press: () {},
             ),
             Feature(
-              name: 'Medicine',
-              img: 'images/medi2.jpg',
+              name: 'Ambulance',
+              img: 'images/am.png',
               press: () {},
             ),
             Feature(
-              name: 'Dental',
-              img: 'images/den.jpg',
+              name: 'Doctors Time',
+              img: 'images/dt.png',
               press: () {},
             )
           ],
@@ -59,13 +59,13 @@ class RowWithFeatureOne extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Feature(
-              name: '    Seat\n Booking',
-              img: 'images/bed.png',
+              name: 'Blood Donate',
+              img: 'images/b.png',
               press: () {},
             ),
             Feature(
-              name: 'Medicine',
-              img: 'images/medi2.jpg',
+              name: 'Physiotheraphy',
+              img: 'images/ph.png',
               press: () {},
             ),
           ],
