@@ -81,8 +81,20 @@ class HomeTwo extends StatelessWidget {
               focusColor: Colors.blue,
               onTap: () {},
             ),
-            const ListTile(),
-            const ListTile()
+            ListTile(
+              title: Row(
+                children: const [
+                  Icon(Icons.list),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text('Edit Profile',
+                      style: TextStyle(color: Colors.black, fontSize: 16))
+                ],
+              ),
+              focusColor: Colors.blue,
+              onTap: () {},
+            ),
           ],
         ),
       ),
