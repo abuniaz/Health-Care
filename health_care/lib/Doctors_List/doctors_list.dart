@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_care/Doctors_List/search_bar.dart';
 
 class DoctorsHome extends StatelessWidget {
   const DoctorsHome({Key? key}) : super(key: key);
@@ -16,17 +17,11 @@ class DoctorsHome extends StatelessWidget {
       body: Container(
         color: Colors.blueGrey,
         child: ListView(
-          children: [
-            const SizedBox(
+          children: const [
+            SizedBox(
               height: 40,
             ),
-            Container(
-              decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(30)),
-              child: TextFormField(
-                decoration: const InputDecoration(),
-              ),
-            )
+            SearchBar()
           ],
         ),
       ),
