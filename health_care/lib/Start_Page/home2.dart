@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_care/Doctors_List/doctors_list.dart';
 import 'package:health_care/Start_Page/row_with_fea_One.dart';
 
 class HomeTwo extends StatelessWidget {
@@ -88,12 +89,17 @@ class HomeTwo extends StatelessWidget {
                   SizedBox(
                     width: 20,
                   ),
-                  Text('Edit Profile',
+                  Text('Doctors List',
                       style: TextStyle(color: Colors.black, fontSize: 16))
                 ],
               ),
               focusColor: Colors.blue,
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const DoctorsHome()));
+              },
             ),
           ],
         ),
