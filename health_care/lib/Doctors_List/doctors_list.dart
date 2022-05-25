@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_care/Doctors_List/categories.dart';
 import 'package:health_care/Doctors_List/search_bar.dart';
 
 class DoctorsHome extends StatelessWidget {
@@ -21,7 +22,8 @@ class DoctorsHome extends StatelessWidget {
             SizedBox(
               height: 40,
             ),
-            SearchBar()
+            SearchBar(),
+            Categories()
           ],
         ),
       ),
