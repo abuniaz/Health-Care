@@ -75,8 +75,10 @@ class HomeTwo extends StatelessWidget {
                   SizedBox(
                     width: 20,
                   ),
-                  Text('Edit Profile',
-                      style: TextStyle(color: Colors.black, fontSize: 16))
+                  Text(
+                    'Edit Profile',
+                    style: TextStyle(color: Colors.black, fontSize: 16),
+                  )
                 ],
               ),
               focusColor: Colors.blue,
@@ -89,16 +91,20 @@ class HomeTwo extends StatelessWidget {
                   SizedBox(
                     width: 20,
                   ),
-                  Text('Doctors List',
-                      style: TextStyle(color: Colors.black, fontSize: 16))
+                  Text(
+                    'Doctors List',
+                    style: TextStyle(color: Colors.black, fontSize: 16),
+                  )
                 ],
               ),
               focusColor: Colors.blue,
               onTap: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const DoctorsHome()));
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const DoctorsHome(),
+                  ),
+                );
               },
             ),
           ],
