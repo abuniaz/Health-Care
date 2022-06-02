@@ -19,14 +19,18 @@ class _CategoriesState extends State<Categories> {
           height: 45,
           width: 90,
           decoration: BoxDecoration(
-              color: _isSelectedColor ? Colors.black : Colors.white,
-              borderRadius: BorderRadius.circular(30)),
+            color: _isSelectedColor ? Colors.black : Colors.white,
+            borderRadius: BorderRadius.circular(30),
+          ),
           child: const Center(
-              child: Text(
-            'All',
-            style: TextStyle(
-                fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
-          )),
+            child: Text(
+              'All',
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black),
+            ),
+          ),
         )
       ],
     );
