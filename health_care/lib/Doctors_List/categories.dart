@@ -13,26 +13,29 @@ class _CategoriesState extends State<Categories> {
   final bool _isSelectedColor = false;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        Contant(
-          isSelectedColor: _isSelectedColor,
-          name: 'All',
-        ),
-        Contant(
-          isSelectedColor: _isSelectedColor,
-          name: 'Medicine',
-        ),
-        Contant(
-          isSelectedColor: _isSelectedColor,
-          name: 'Dental',
-        ),
-        Contant(
-          isSelectedColor: _isSelectedColor,
-          name: 'Optometry',
-        )
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Contant(
+            isSelectedColor: _isSelectedColor,
+            name: 'All',
+          ),
+          Contant(
+            isSelectedColor: _isSelectedColor,
+            name: 'Medicine',
+          ),
+          Contant(
+            isSelectedColor: _isSelectedColor,
+            name: 'Dental',
+          ),
+          Contant(
+            isSelectedColor: _isSelectedColor,
+            name: 'Optometry',
+          )
+        ],
+      ),
     );
   }
 }
