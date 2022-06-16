@@ -14,25 +14,56 @@ class _CategoriesState extends State<Categories> {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Container(
-          height: 45,
-          width: 90,
-          decoration: BoxDecoration(
-            color: _isSelectedColor ? Colors.black : Colors.white,
-            borderRadius: BorderRadius.circular(30),
-          ),
-          child: const Center(
-            child: Text(
-              'All',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black),
-            ),
-          ),
+        Contant(
+          isSelectedColor: _isSelectedColor,
+          name: 'All',
+        ),
+        Contant(
+          isSelectedColor: _isSelectedColor,
+          name: 'Medicine',
+        ),
+        Contant(
+          isSelectedColor: _isSelectedColor,
+          name: 'Dental',
+        ),
+        Contant(
+          isSelectedColor: _isSelectedColor,
+          name: 'Optometry',
         )
       ],
+    );
+  }
+}
+
+class Contant extends StatelessWidget {
+  const Contant({
+    Key? key,
+    required bool isSelectedColor,
+    required this.name,
+  })  : _isSelectedColor = isSelectedColor,
+        super(key: key);
+
+  final bool _isSelectedColor;
+  final String name;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 45,
+      width: 100,
+      decoration: BoxDecoration(
+        color: _isSelectedColor ? Colors.black : Colors.white,
+        borderRadius: BorderRadius.circular(30),
+      ),
+      child: Center(
+        child: Text(
+          name,
+          style: const TextStyle(
+              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
+        ),
+      ),
     );
   }
 }
